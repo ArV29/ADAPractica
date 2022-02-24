@@ -1,7 +1,7 @@
 from numpy import random
 import time
 import MergeSort
-import QuickSort
+import InsertionSort
 import LinearSearch
 import BinarySearch
 random.seed(100)
@@ -11,9 +11,9 @@ print("SORTING using MERGE SORT")
 for array in arrays:
   MergeSort.main(array)
   
-print("SORTING using QUICK SORT")
+print("SORTING using INSERTION SORT")
 for array in arrays:
-  QuickSort.main(array)
+  InsertionSort.main(array)
 
 for array in arrays:
   array.sort()

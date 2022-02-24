@@ -1,4 +1,6 @@
 import time
+
+
 def binarySearch(arr, low, high, x):
 
     if high >= low:
@@ -19,13 +21,13 @@ def binarySearch(arr, low, high, x):
 
 
 def main(arr, query):
-  startTime = time.time()
-  ans = binarySearch(arr, 0, len(arr)-1, query)
+    startTime = time.time()
+    ans = binarySearch(arr, 0, len(arr)-1, query)
 
-  if ans!=-1:
-    print("Value Found at index:", ans, end="\t")
-  else:
-    print("This element cannot be found!", end="\t")
+    if ans != -1:
+        print("Value Found at index:", ans, end="\t")
+    else:
+        print("This element cannot be found!", end="\t")
 
-  print("For Array Size:", len(arr), ", Query:", query,
-        ", Time Taken: ", time.time()-startTime, "seconds")
+    print("For Array Size:", len(arr), ", Query:", query,
+          ", Time Taken: ", time.time()-startTime, "seconds")

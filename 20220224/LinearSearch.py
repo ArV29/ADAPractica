@@ -1,6 +1,5 @@
 import time
 
-from anyio import start_blocking_portal
 def search(arr, query):
   for index, value in enumerate(arr):
     if value == query:
